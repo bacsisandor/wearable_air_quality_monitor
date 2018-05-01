@@ -1,0 +1,6 @@
+framework module Pods_WearableAirQualityMonitor {
+  umbrella header "Pods-WearableAirQualityMonitor-umbrella.h"
+
+  export *
+  module * { export * }
+}

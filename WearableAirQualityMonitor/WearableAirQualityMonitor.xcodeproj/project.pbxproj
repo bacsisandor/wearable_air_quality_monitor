@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B87F9EA22B3F7B4FE6E8054 /* Pods_WearableAirQualityMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA8C295F2C278714C41E5A2 /* Pods_WearableAirQualityMonitor.framework */; };
+		4A07C885203A158800E577B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A07C884203A158700E577B6 /* GoogleService-Info.plist */; };
+		4A13E089200C05BF00005E40 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A13E088200C05BF00005E40 /* LocationManager.swift */; };
+		4A13E08B200C829900005E40 /* MeasuredValueAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A13E08A200C829900005E40 /* MeasuredValueAnnotation.swift */; };
+		4AE39A5D1FF7907E00E9EF2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE39A5C1FF7907E00E9EF2C /* AppDelegate.swift */; };
+		4AE39A621FF7907E00E9EF2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE39A601FF7907E00E9EF2C /* Main.storyboard */; };
+		4AE39A651FF7907E00E9EF2C /* WearableAirQualityMonitor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AE39A631FF7907E00E9EF2C /* WearableAirQualityMonitor.xcdatamodeld */; };
+		4AE39A671FF7907E00E9EF2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE39A661FF7907E00E9EF2C /* Assets.xcassets */; };
+		4AE39A6A1FF7907E00E9EF2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE39A681FF7907E00E9EF2C /* LaunchScreen.storyboard */; };
+		4AE39A721FF796DA00E9EF2C /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE39A711FF796DA00E9EF2C /* Measure.swift */; };
+		4AE39A741FF7975800E9EF2C /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE39A731FF7975800E9EF2C /* History.swift */; };
+		4AE39A761FF7977E00E9EF2C /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE39A751FF7977E00E9EF2C /* Map.swift */; };
+		4AE39A781FF7979D00E9EF2C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE39A771FF7979D00E9EF2C /* Settings.swift */; };
+		4AF3F2E12009501E00FB46D2 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF3F2E02009501E00FB46D2 /* AppError.swift */; };
+		4AF3F2E5200958AA00FB46D2 /* BluetoothHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF3F2E4200958AA00FB46D2 /* BluetoothHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		392405DD38073A9611BED80E /* Pods-WearableAirQualityMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WearableAirQualityMonitor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WearableAirQualityMonitor/Pods-WearableAirQualityMonitor.debug.xcconfig"; sourceTree = "<group>"; };
+		4A07C884203A158700E577B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A13E088200C05BF00005E40 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		4A13E08A200C829900005E40 /* MeasuredValueAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasuredValueAnnotation.swift; sourceTree = "<group>"; };
+		4AE39A591FF7907E00E9EF2C /* WearableAirQualityMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WearableAirQualityMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE39A5C1FF7907E00E9EF2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4AE39A611FF7907E00E9EF2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AE39A641FF7907E00E9EF2C /* WearableAirQualityMonitor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WearableAirQualityMonitor.xcdatamodel; sourceTree = "<group>"; };
+		4AE39A661FF7907E00E9EF2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AE39A691FF7907E00E9EF2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AE39A6B1FF7907E00E9EF2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE39A711FF796DA00E9EF2C /* Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		4AE39A731FF7975800E9EF2C /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		4AE39A751FF7977E00E9EF2C /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		4AE39A771FF7979D00E9EF2C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		4AF3F2E02009501E00FB46D2 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		4AF3F2E4200958AA00FB46D2 /* BluetoothHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothHelper.swift; sourceTree = "<group>"; };
+		5AA8C295F2C278714C41E5A2 /* Pods_WearableAirQualityMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WearableAirQualityMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8705D03A52143D370E90716C /* Pods-WearableAirQualityMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WearableAirQualityMonitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-WearableAirQualityMonitor/Pods-WearableAirQualityMonitor.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AE39A561FF7907E00E9EF2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B87F9EA22B3F7B4FE6E8054 /* Pods_WearableAirQualityMonitor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AE39A501FF7907E00E9EF2C = {
+			isa = PBXGroup;
+			children = (
+				4AE39A5B1FF7907E00E9EF2C /* WearableAirQualityMonitor */,
+				4AE39A5A1FF7907E00E9EF2C /* Products */,
+				F2AAB78037ABB49C7285977B /* Pods */,
+				BEB3782D7B1534E5B9B181E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4AE39A5A1FF7907E00E9EF2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AE39A591FF7907E00E9EF2C /* WearableAirQualityMonitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AE39A5B1FF7907E00E9EF2C /* WearableAirQualityMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				4AE39A5C1FF7907E00E9EF2C /* AppDelegate.swift */,
+				4AF3F2E02009501E00FB46D2 /* AppError.swift */,
+				4AF3F2E4200958AA00FB46D2 /* BluetoothHelper.swift */,
+				4AE39A731FF7975800E9EF2C /* History.swift */,
+				4A13E088200C05BF00005E40 /* LocationManager.swift */,
+				4AE39A751FF7977E00E9EF2C /* Map.swift */,
+				4AE39A711FF796DA00E9EF2C /* Measure.swift */,
+				4A13E08A200C829900005E40 /* MeasuredValueAnnotation.swift */,
+				4AE39A771FF7979D00E9EF2C /* Settings.swift */,
+				4AE39A601FF7907E00E9EF2C /* Main.storyboard */,
+				4AE39A661FF7907E00E9EF2C /* Assets.xcassets */,
+				4AE39A681FF7907E00E9EF2C /* LaunchScreen.storyboard */,
+				4AE39A6B1FF7907E00E9EF2C /* Info.plist */,
+				4A07C884203A158700E577B6 /* GoogleService-Info.plist */,
+				4AE39A631FF7907E00E9EF2C /* WearableAirQualityMonitor.xcdatamodeld */,
+			);
+			path = WearableAirQualityMonitor;
+			sourceTree = "<group>";
+		};
+		BEB3782D7B1534E5B9B181E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AA8C295F2C278714C41E5A2 /* Pods_WearableAirQualityMonitor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2AAB78037ABB49C7285977B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				392405DD38073A9611BED80E /* Pods-WearableAirQualityMonitor.debug.xcconfig */,
+				8705D03A52143D370E90716C /* Pods-WearableAirQualityMonitor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AE39A581FF7907E00E9EF2C /* WearableAirQualityMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AE39A6E1FF7907E00E9EF2C /* Build configuration list for PBXNativeTarget "WearableAirQualityMonitor" */;
+			buildPhases = (
+				DA0F786710A2080EE063B1B1 /* [CP] Check Pods Manifest.lock */,
+				4AE39A551FF7907E00E9EF2C /* Sources */,
+				4AE39A561FF7907E00E9EF2C /* Frameworks */,
+				4AE39A571FF7907E00E9EF2C /* Resources */,
+				920290C4AD5392327C788700 /* [CP] Embed Pods Frameworks */,
+				95C2B1174D75D6CEEFB340DE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WearableAirQualityMonitor;
+			productName = WearableAirQualityMonitor;
+			productReference = 4AE39A591FF7907E00E9EF2C /* WearableAirQualityMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AE39A511FF7907E00E9EF2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Bacsi Sandor";
+				TargetAttributes = {
+					4AE39A581FF7907E00E9EF2C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4AE39A541FF7907E00E9EF2C /* Build configuration list for PBXProject "WearableAirQualityMonitor" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AE39A501FF7907E00E9EF2C;
+			productRefGroup = 4AE39A5A1FF7907E00E9EF2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AE39A581FF7907E00E9EF2C /* WearableAirQualityMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AE39A571FF7907E00E9EF2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE39A6A1FF7907E00E9EF2C /* LaunchScreen.storyboard in Resources */,
+				4A07C885203A158800E577B6 /* GoogleService-Info.plist in Resources */,
+				4AE39A671FF7907E00E9EF2C /* Assets.xcassets in Resources */,
+				4AE39A621FF7907E00E9EF2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		920290C4AD5392327C788700 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WearableAirQualityMonitor/Pods-WearableAirQualityMonitor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BlueCapKit/BlueCapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlueCapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WearableAirQualityMonitor/Pods-WearableAirQualityMonitor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95C2B1174D75D6CEEFB340DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WearableAirQualityMonitor/Pods-WearableAirQualityMonitor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA0F786710A2080EE063B1B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WearableAirQualityMonitor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AE39A551FF7907E00E9EF2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A13E08B200C829900005E40 /* MeasuredValueAnnotation.swift in Sources */,
+				4AE39A781FF7979D00E9EF2C /* Settings.swift in Sources */,
+				4AE39A761FF7977E00E9EF2C /* Map.swift in Sources */,
+				4AE39A5D1FF7907E00E9EF2C /* AppDelegate.swift in Sources */,
+				4AE39A721FF796DA00E9EF2C /* Measure.swift in Sources */,
+				4AE39A741FF7975800E9EF2C /* History.swift in Sources */,
+				4AE39A651FF7907E00E9EF2C /* WearableAirQualityMonitor.xcdatamodeld in Sources */,
+				4AF3F2E5200958AA00FB46D2 /* BluetoothHelper.swift in Sources */,
+				4AF3F2E12009501E00FB46D2 /* AppError.swift in Sources */,
+				4A13E089200C05BF00005E40 /* LocationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4AE39A601FF7907E00E9EF2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AE39A611FF7907E00E9EF2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AE39A681FF7907E00E9EF2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AE39A691FF7907E00E9EF2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AE39A6C1FF7907E00E9EF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4AE39A6D1FF7907E00E9EF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AE39A6F1FF7907E00E9EF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 392405DD38073A9611BED80E /* Pods-WearableAirQualityMonitor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2J3T78VFQH;
+				INFOPLIST_FILE = WearableAirQualityMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bacsi.sandor.WearableAirQualityMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4AE39A701FF7907E00E9EF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8705D03A52143D370E90716C /* Pods-WearableAirQualityMonitor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2J3T78VFQH;
+				INFOPLIST_FILE = WearableAirQualityMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bacsi.sandor.WearableAirQualityMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AE39A541FF7907E00E9EF2C /* Build configuration list for PBXProject "WearableAirQualityMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE39A6C1FF7907E00E9EF2C /* Debug */,
+				4AE39A6D1FF7907E00E9EF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AE39A6E1FF7907E00E9EF2C /* Build configuration list for PBXNativeTarget "WearableAirQualityMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE39A6F1FF7907E00E9EF2C /* Debug */,
+				4AE39A701FF7907E00E9EF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4AE39A631FF7907E00E9EF2C /* WearableAirQualityMonitor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4AE39A641FF7907E00E9EF2C /* WearableAirQualityMonitor.xcdatamodel */,
+			);
+			currentVersion = 4AE39A641FF7907E00E9EF2C /* WearableAirQualityMonitor.xcdatamodel */;
+			path = WearableAirQualityMonitor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4AE39A511FF7907E00E9EF2C /* Project object */;
+}

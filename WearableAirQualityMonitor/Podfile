@@ -1,0 +1,10 @@
+platform :ios, '10.0'
+use_frameworks!
+
+target 'WearableAirQualityMonitor' do
+pod 'BlueCapKit', '~> 0.6'
+pod 'UICircularProgressRing'
+pod 'LTMorphingLabel'
+pod 'Firebase/Core'
+pod 'Firebase/Database'
+end
